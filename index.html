@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>dialerMenu</title>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="jquery-dialerMenu.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquery-dialerMenu.css" />
+        <script type="text/javascript">
+            $(function() {
+                $("#dialerMenu").css({
+                    margin          :   'auto',
+                    width           :   '600px',
+                    textAlign       :   'center',
+                    verticalAlign   :   'center'
+                });
+                $("#dialerMenu img").css({
+                    border  :   'none'
+                });
+                var bW;
+                $("#dialerMenu img").mouseover(function(){
+                    bW = this.width;
+                    this.width *= 0.9;
+                }).mouseout(function(){
+                    this.width = bW;
+                });                    
+                    
+            });
+        </script>
+    </head>
+    <body>
+        <div id="dialerMenu">
+            <table> 
+                <tbody> 
+                    <tr> 
+                        <td> 
+                            <a href="#"> 
+                                <img src="images/arch.png" /> 
+                            </a> 
+                        </td> 
+                        <td> 
+                            <a href="#"> 
+                                <img src="images/debian.png" /> 
+                            </a> 
+                        </td> 
+                        <td> 
+                            <a href="#"> 
+                                <img src="images/fedora.png" /> 
+                            </a> 
+                        </td> 
+                    </tr> 
+                    <tr> 
+                        <td> 
+                            <a href="#"> 
+                                <img src="images/frugalware.png" /> 
+                            </a> 
+                        </td> 
+                        <td> 
+                            <a href="#"> 
+                                <img src="images/mandriva.png" /> 
+                            </a> 
+                        </td> 
+                        <td> 
+                            <a href="#"> 
+                                <img src="images/mint.png" /> 
+                            </a> 
+                        </td> 
+                    </tr> 
+                    <tr> 
+                        <td> 
+                            <a href="#"> 
+                                <img src="images/suse.png" /> 
+                            </a> 
+                        </td> 
+                        <td> 
+                            <a href="#"> 
+                                <img src="images/ubuntu.png" /> 
+                            </a> 
+                        </td> 
+                        <td> 
+                            <a href="#"> 
+                                <img src="images/what.png" /> 
+                            </a> 
+                        </td> 
+                    </tr> 
+                </tbody> 
+            </table>
+        </div>
+    </body>
+</html>
